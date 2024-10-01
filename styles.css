@@ -1,0 +1,161 @@
+body {
+font-family: sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 40px;
+    line-height: 1.4;
+    font-weight: bold;        
+    font-weight: 700;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.highlight {
+    font-weight: bold;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.stars {
+    font-size: 24px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Ensure proper alignment */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.requirements {
+    text-align: left;
+    flex: 1 1 300px; /* Flex basis to allow flexibility */
+    margin-bottom: 20px;
+}
+
+.requirements ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+    font-size: 18px;
+}
+
+.requirements li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.cta{
+    background-color: #d41f1f;
+    padding: 7px 100px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.cta .button {
+    background-color: #d41f1f;
+    text-decoration: none;
+    padding: 2px 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white;
+}
+
+.cta .small-text {
+    font-size: 14px;
+    margin-top: 5px;
+    color: white;
+}
+
+.image-section {
+    flex: 1 1 300px; /* Adjust for image section */
+    text-align: right;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 500px; /* Prevent image from exceeding max-width */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer img {
+    margin-top: 20px;
+    width: 100px; /* Adjusted size */
+}
+
+.footer-note {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}
+
+.links {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.footer-link {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+footer{
+    background-size: cover;
+    background-color: #efefef;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .requirements {
+        max-width: 90%; 
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    .image-section {
+        display: none; 
+    }
+
+    .header h1 {
+        font-size: 24px; /* Responsive font size */
+    }
+
+    .cta .button {
+        font-size: 16px; /* Responsive button size */
+        padding: 12px 10px; /* Responsive button padding */
+    }
+
+    .cta .small-text {
+        font-size: 12px; /* Responsive small text size */
+    }
+}
